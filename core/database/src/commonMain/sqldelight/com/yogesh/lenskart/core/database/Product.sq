@@ -1,0 +1,26 @@
+CREATE TABLE ProductEntity (
+    id TEXT NOT NULL PRIMARY KEY,
+    name TEXT NOT NULL,
+    brand TEXT NOT NULL,
+    category TEXT NOT NULL,
+    shape TEXT NOT NULL,
+    gender TEXT NOT NULL,
+    priceInr INTEGER NOT NULL,
+    mrpInr INTEGER NOT NULL,
+    rating REAL NOT NULL,
+    reviewCount INTEGER NOT NULL,
+    description TEXT NOT NULL,
+    imagesJson TEXT NOT NULL,
+    colorsJson TEXT NOT NULL,
+    specsJson TEXT NOT NULL,
+    updatedAtEpochMs INTEGER NOT NULL
+);
+
+selectAll:
+SELECT * FROM ProductEntity;
+
+selectById:
+SELECT * FROM ProductEntity WHERE id = ?;
+
+insertOrReplace:
+INSERT OR REPLACE INTO ProductEntity VALUES ?;

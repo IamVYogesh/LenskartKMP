@@ -1,0 +1,13 @@
+CREATE TABLE SearchHistoryEntry (
+    query TEXT NOT NULL PRIMARY KEY,
+    searchedAtEpochMs INTEGER NOT NULL
+);
+
+selectRecent:
+SELECT query FROM SearchHistoryEntry ORDER BY searchedAtEpochMs DESC LIMIT 8;
+
+upsert:
+INSERT OR REPLACE INTO SearchHistoryEntry(query, searchedAtEpochMs) VALUES (?, ?);
+
+deleteAll:
+DELETE FROM SearchHistoryEntry;

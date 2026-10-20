@@ -1,0 +1,27 @@
+CREATE TABLE CartLine (
+    productId TEXT NOT NULL,
+    colorName TEXT NOT NULL,
+    quantity INTEGER NOT NULL,
+    PRIMARY KEY (productId, colorName)
+);
+
+-- JOIN keeps cart prices in sync with the cached product catalogue
+selectCartItems:
+SELECT CartLine.productId, CartLine.colorName, CartLine.quantity,
+       ProductEntity.name, ProductEntity.brand, ProductEntity.priceInr,
+       ProductEntity.mrpInr, ProductEntity.imagesJson
+FROM CartLine
+JOIN ProductEntity ON ProductEntity.id = CartLine.productId
+ORDER BY CartLine.rowid;
+
+selectLine:
+SELECT * FROM CartLine WHERE productId = ? AND colorName = ?;
+
+upsert:
+INSERT OR REPLACE INTO CartLine VALUES ?;
+
+deleteLine:
+DELETE FROM CartLine WHERE productId = ? AND colorName = ?;
+
+deleteAll:
+DELETE FROM CartLine;

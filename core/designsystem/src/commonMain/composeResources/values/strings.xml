@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">Lenskart KMP</string>
+
+    <!-- navigation -->
+    <string name="tab_home">Home</string>
+    <string name="tab_shop">Shop</string>
+    <string name="tab_wishlist">Wishlist</string>
+    <string name="tab_cart">Cart</string>
+    <string name="tab_account">Account</string>
+
+    <!-- generic -->
+    <string name="retry">Retry</string>
+    <string name="back">Back</string>
+    <string name="see_all">See all</string>
+    <string name="offline_banner">You are offline. Showing saved products.</string>
+    <string name="error_generic">Something went wrong</string>
+    <string name="empty_products">No products found</string>
+    <string name="close">Close</string>
+
+    <!-- home -->
+    <string name="home_search_hint">Search frames, brands, shapes…</string>
+    <string name="home_shop_by_category">Shop by category</string>
+    <string name="home_trending">Trending now</string>
+    <string name="home_new_arrivals">New arrivals</string>
+
+    <!-- catalog / search -->
+    <string name="catalog_title">Shop</string>
+    <string name="catalog_all">All</string>
+    <string name="catalog_filters">Filters</string>
+    <string name="catalog_sort">Sort</string>
+    <string name="catalog_results">%1$d products</string>
+    <string name="filter_shape">Frame shape</string>
+    <string name="filter_gender">Gender</string>
+    <string name="filter_max_price">Max price</string>
+    <string name="filter_any_price">Any price</string>
+    <string name="filter_apply">Show results</string>
+    <string name="filter_clear">Clear all</string>
+    <string name="search_hint">Search eyewear</string>
+    <string name="search_recent">Recent searches</string>
+    <string name="search_clear_history">Clear</string>
+    <string name="search_no_results">No results for \"%1$s\"</string>
+
+    <!-- product -->
+    <string name="product_add_to_cart">Add to cart</string>
+    <string name="product_try_on">Try on</string>
+    <string name="product_colors">Frame colour</string>
+    <string name="product_specs">Specifications</string>
+    <string name="product_description">About this product</string>
+    <string name="product_added">Added to cart</string>
+    <string name="product_view_cart">View cart</string>
+    <string name="product_not_found">Product not available</string>
+    <string name="product_share_text">Check out %1$s by %2$s for %3$s on Lenskart KMP</string>
+
+    <!-- cart -->
+    <string name="cart_title">My cart</string>
+    <string name="cart_empty">Your cart is empty</string>
+    <string name="cart_coupon_hint">Coupon code</string>
+    <string name="cart_apply">Apply</string>
+    <string name="cart_coupon_applied">Coupon %1$s applied</string>
+    <string name="cart_price_details">Price details</string>
+    <string name="cart_subtotal">Subtotal (%1$d items)</string>
+    <string name="cart_coupon_discount">Coupon discount</string>
+    <string name="cart_delivery">Delivery</string>
+    <string name="cart_free">FREE</string>
+    <string name="cart_total">Total</string>
+    <string name="cart_savings">You save %1$s on this order</string>
+    <string name="cart_checkout">Place order</string>
+    <string name="cart_order_placed">Order placed!</string>
+    <string name="cart_order_message">Order %1$s for %2$s will reach you in about %3$d days.</string>
+    <string name="cart_sign_in_required">Sign in to place your order</string>
+    <string name="cart_ok">Great</string>
+
+    <!-- wishlist -->
+    <string name="wishlist_title">Wishlist</string>
+    <string name="wishlist_empty">Tap the heart on any frame to save it here</string>
+
+    <!-- account -->
+    <string name="account_title">Account</string>
+    <string name="account_sign_in">Sign in with mobile</string>
+    <string name="account_phone_label">Mobile number</string>
+    <string name="account_send_otp">Send OTP</string>
+    <string name="account_otp_label">6-digit OTP</string>
+    <string name="account_otp_hint">Demo OTP is 123456</string>
+    <string name="account_verify">Verify &amp; sign in</string>
+    <string name="account_change_number">Change number</string>
+    <string name="account_welcome">Hello, %1$s</string>
+    <string name="account_logout">Sign out</string>
+    <string name="account_theme">Appearance</string>
+    <string name="account_about">About</string>
+    <string name="account_running_on">Running on %1$s %2$s</string>
+
+    <!-- try-on -->
+    <string name="tryon_title">Virtual try-on</string>
+    <string name="tryon_hint">Drag to move, pinch to resize the frame</string>
+    <string name="tryon_no_camera">Camera preview is not available here</string>
+    <string name="tryon_permission">Camera permission is needed to try frames on</string>
+</resources>

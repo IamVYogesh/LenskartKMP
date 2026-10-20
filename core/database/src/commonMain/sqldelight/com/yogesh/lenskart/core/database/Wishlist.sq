@@ -1,0 +1,21 @@
+CREATE TABLE WishlistEntry (
+    productId TEXT NOT NULL PRIMARY KEY,
+    addedAtEpochMs INTEGER NOT NULL
+);
+
+selectIds:
+SELECT productId FROM WishlistEntry;
+
+selectProducts:
+SELECT ProductEntity.* FROM ProductEntity
+JOIN WishlistEntry ON WishlistEntry.productId = ProductEntity.id
+ORDER BY WishlistEntry.addedAtEpochMs DESC;
+
+exists:
+SELECT COUNT(*) FROM WishlistEntry WHERE productId = ?;
+
+insert:
+INSERT OR REPLACE INTO WishlistEntry(productId, addedAtEpochMs) VALUES (?, ?);
+
+delete:
+DELETE FROM WishlistEntry WHERE productId = ?;
